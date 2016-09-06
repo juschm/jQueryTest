@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>accordion in jquery</title>
+	<script type="text/javascript" src="../jquery-3.1.0.min.js""></script>
+	<script type="text/javascript" src="script.js"></script>
+	<style>
+		body, html{
+			padding: 0;
+			margin: 0;
+			background-color: lightblue;
+			font-family: sans-serif;
+		}
+
+		.container{
+			width: 600px;
+			margin: 0 auto;
+		}
+
+		.accordion{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			border: #009 1px solid;
+		}
+
+		.accordion li{
+			background: white;
+			margin: 0;
+			padding: 0;
+			border-top: #009 1px solid;
+		}
+
+		.accordion li:first-child{
+			margin: 0;
+			padding: 0;
+			border-top: none;
+		}
+
+		.accordion li p{ 
+			margin: 0;
+		}
+
+		.content{
+			background: #efefff;
+			border-top: #00e 1px solid;
+			padding: 10px; 
+			display: none;
+		}
+
+		.title{
+			padding: 10px;
+		}
+
+		.title span{
+			display: block;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>The Accordion is here!</h2>
+		<ul class = "accordion">
+			<li>
+				<div class="title">Title 1 <span>+</span></div>
+				<div class="content">
+					<p>Content 1</p>
+					<p>Content 2</p>
+					<p>l&uuml;dell&uuml;del l&uuml;del l&uuml;del l&uuml;dell&uuml;dell&uuml;del l&uuml;dell&uuml;del</p>
+				</div>
+			</li>
+			<li>
+				<div class="title">Title 2 <span>+</span></div>
+				<div class="content">
+					<p>Content 2</p>
+				</div>			
+			</li>
+			<li>
+				<div class="title">Title 3 <span>+</span></div>
+				<div class="content">
+					<p>Content 3</p>
+				</div>			
+			</li>
+			<li>
+				<div class="title">Title 4 <span>+</span></div>
+				<div class="content">
+					<p>Content 4</p>
+				</div>			
+			</li>
+
+		</ul>
+
+	</div>
+
+</body>
+</html>
